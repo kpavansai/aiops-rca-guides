@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIOps RCA — Multi-Agent Architecture Guides</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 48px;
+            text-align: center;
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        .guides {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+        @media (max-width: 600px) {
+            .guides { grid-template-columns: 1fr; }
+        }
+        .guide-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .guide-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+            transform: translateY(-4px);
+        }
+        .guide-card h3 {
+            color: #1a1a1a;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .guide-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .guide-card .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #333;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 8px;
+        }
+        .guide-card.dark {
+            background: #f8f8f8;
+        }
+        .guide-card.light {
+            background: #fafaf8;
+        }
+        .reference {
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 32px;
+            text-align: left;
+        }
+        .reference h3 {
+            color: #1a1a1a;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .reference p {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .reference a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .reference a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AIOps RCA Architecture Guides</h1>
+        <p class="subtitle">
+            Comprehensive research-backed guides on multi-agent systems for root cause analysis.
+            From naive fan-out to bidirectional A* with live heuristics.
+        </p>
+        
+        <div class="guides">
+            <a href="aiops-rca-architecture.html" class="guide-card dark">
+                <h3>Architecture Comparison</h3>
+                <p>Interactive guide comparing 4 multi-agent RCA architectures with live metrics, flow diagrams, and decision matrices.</p>
+                <span class="tag">Dark theme</span>
+                <span class="tag">Interactive</span>
+            </a>
+            
+            <a href="aiops-rca-complete-guide.html" class="guide-card light">
+                <h3>Complete Research Guide</h3>
+                <p>Deep-dive technical reference with algorithm details, research citations, production architecture, and cost optimizations.</p>
+                <span class="tag">Light theme</span>
+                <span class="tag">Research-backed</span>
+            </a>
+        </div>
+        
+        <div class="reference">
+            <h3>📚 Research Foundation</h3>
+            <p>
+                These guides synthesize findings from OpenRCA (ICLR 2025), Flow-of-Action (WWW 2025), 
+                MA-RCA (Springer 2025), STRATUS (NeurIPS 2025), and other peer-reviewed research on 
+                LLM-based multi-agent systems for AIOps RCA.
+            </p>
+            <p style="margin-top: 12px;">
+                🔗 Medium Article: <a href="https://kpavansai.medium.com/why-multi-agent-aiops-rca-fails-at-scale-and-how-a-beam-search-and-shared-blackboards-fix-it-25ddac45d3a2" target="_blank">
+                Why Multi-Agent AIOps RCA Fails at Scale
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
